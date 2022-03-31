@@ -1,7 +1,7 @@
 import random, math
 from colored import fore, back, style
 
-number = int(math.ceil(random.randint(1,10)))
+number = int(math.ceil(random.randint(1,15)))
 with open("splashes.txt") as splashes:
     splash = splashes.readlines()
     if number == 1:
