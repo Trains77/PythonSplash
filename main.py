@@ -2,7 +2,7 @@ import random, math
 from colored import fore, back, style
 
 number = int(math.ceil(random.randint(1,20)))
-with open("/home/trains77/Scripts/python/PythonSplash/splashes.txt") as splashes:
+with open("splashes.txt") as splashes:
     splash = splashes.readlines()
     if number == 1:
         print(random.choice(splash))
