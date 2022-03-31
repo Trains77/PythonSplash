@@ -1,8 +1,8 @@
 import random, math
 from colored import fore, back, style
 
-number = int(math.ceil(random.randint(1,15)))
-with open("splashes.txt") as splashes:
+number = int(math.ceil(random.randint(1,20)))
+with open("/home/trains77/Scripts/python/PythonSplash/splashes.txt") as splashes:
     splash = splashes.readlines()
     if number == 1:
         print(random.choice(splash))
@@ -34,3 +34,13 @@ with open("splashes.txt") as splashes:
         print(fore.SKY_BLUE_1 + random.choice(splash) + style.RESET)
     elif number == 15:
         print(fore.LIGHT_BLUE + random.choice(splash) + style.RESET)
+    elif number == 16:
+        print(fore.LIGHT_GREEN + random.choice(splash) + style.RESET)
+    elif number == 17:
+        print(fore.LIGHT_RED + random.choice(splash) + style.RESET)
+    elif number == 18:
+        print(fore.LIGHT_CORAL + random.choice(splash) + style.RESET)
+    elif number == 19:
+        print(fore.DARK_RED_1 + random.choice(splash) + style.RESET)
+    elif number == 20:
+        print(fore.TAN + random.choice(splash) + style.RESET)
