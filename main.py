@@ -1,15 +1,6 @@
-colors = True # If colors can/should be used
-lolcat = False # Is lolcat available
-dates = True # Are dates available
+colors = True # If colored text can be used
+
 import sys
-
-try:
-    import datetime
-except ImportError:
-    dates = False
-if not lolcat == False:
-    lolcat = shutil.which("lolcat")
-
 try:
     import math, random
     from colored import fore, back, style
