@@ -1,8 +1,11 @@
-import random, math
+import random, math, sys
 from colored import fore, back, style
 
-number = int(math.ceil(random.randint(1,20)))
-with open("splashes.txt") as splashes:
+path = sys.argv
+path[0] = str(path[0])[:-7]
+
+number = int(math.ceil(random.randint(1,19)))
+with open(str(path[0]) + "splashes.txt") as splashes:
     splash = splashes.readlines()
     if number == 1:
         print(random.choice(splash))
@@ -41,6 +44,4 @@ with open("splashes.txt") as splashes:
     elif number == 18:
         print(fore.LIGHT_CORAL + random.choice(splash) + style.RESET)
     elif number == 19:
-        print(fore.DARK_RED_1 + random.choice(splash) + style.RESET)
-    elif number == 20:
         print(fore.TAN + random.choice(splash) + style.RESET)
